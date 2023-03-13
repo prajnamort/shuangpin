@@ -20,6 +20,14 @@ var schemes = {
 var results = {};
 
 var keyboard_layouts = {
+prajnamort : {
+           ',':[0,0], '.':[1,0], 'p':[2,0], 'y':[3,0], '/':[4,0],
+           ';':[5,0], 'b':[6,0], 'c':[7,0], 'l':[8,0], 'g':[9,0],
+           'a':[0,1], 'o':[1,1], 'e':[2,1], 'i':[3,1], 'u':[4,1],
+           'h':[5,1], 'r':[6,1], 't':[7,1], 'n':[8,1], 's':[9,1],
+           'z':[0,2], 'q':[1,2], 'x':[2,2], 'k':[3,2], 'j':[4,2],
+           'f':[5,2], 'd':[6,2], 'm':[7,2], 'w':[8,2], 'v':[9,2],
+},
 qwerty : {
            'q':[0,0], 'w':[1,0], 'e':[2,0], 'r':[3,0], 't':[4,0],
            'y':[5,0], 'u':[6,0], 'i':[7,0], 'o':[8,0], 'p':[9,0],
@@ -273,6 +281,7 @@ function update_geometry(geometry) {
 function add_empty_results(scheme_name) {
   results[scheme_name] = {
     scheme: schemes[scheme_name],
+    prajnamort: {},
     qwerty: {},
     dvorak: {},
     colemak: {}
